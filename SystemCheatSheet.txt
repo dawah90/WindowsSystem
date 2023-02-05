@@ -1,0 +1,28 @@
+#1. Windows Terminal Quake mode
+Start Windows Terminal
+Open Settings
+* Startup > Launch on machine startup > ON
+* Startup and choose "Default terminal application" > Windows-Terminal
+* Appearence > Hide terminal in notification area when it is minimized > ON
+* Actions > Add New > Show/Hide Quake Window > bind CTRL+SPACE
+* Profile powershell and cmd > enable "Run this profile as administrator"
+
+#2. Move "invisible window"
+Select application window in task bar.
+Press "ALT+SPACE" and "F" to attach mouse to it. 
+Move window using arrow keys and press "ENTER" to confirm move.
+
+#3. Reboot Windows cheat sheet 
+Source: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown
+
+#Reboot into UEFI settings
+shutdown -t 0 -r -fw
+
+#Reboot into Advanced startup
+shutdown -t 0 -r -o
+
+#Reboot computer and automatically logon to current session
+shutdown -g -t 0
+
+#Reboot another computer
+shutdown -m \\IP-or-DNS -t 0 -r
