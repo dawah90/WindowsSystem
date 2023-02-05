@@ -11,6 +11,12 @@ winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Microsoft.WindowsTerminal
 winget install -e --id PuTTY.PuTTY
 winget install -e --id Lexikos.AutoHotkey
+winget install -e --id voidtools.Everything
+winget install -e --id Greenshot.Greenshot
+winget install -e --id 7zip.7zip
+winget install -e --id DominikReichl.KeePass
+winget install -e --id Google.Drive
+winget install -e --id GitHub.GitHubDesktop
 winget install sysinternals
 
 $ToolFolder = "C:\_Tools"
@@ -21,13 +27,28 @@ if (-not (Test-Path $ToolFolder)) { New-Item -Path $ToolFolder -ItemType Directo
 $ShortcutPath = "$ToolFolder\Github-Dawah90.url"
 if (-not (Test-Path $ShortcutPath))
 {
-$SourceFilePath = "https://github.com/dawah90"
-$WScriptObj = New-Object -ComObject ("WScript.Shell")
-$shortcut = $WscriptObj.CreateShortcut($ShortcutPath)
-$shortcut.TargetPath = $SourceFilePath
-Write-Output $ShortcutPath
-$shortcut.Save()
+    $SourceFilePath = "https://github.com/dawah90"
+    $WScriptObj = New-Object -ComObject ("WScript.Shell")
+    $shortcut = $WscriptObj.CreateShortcut($ShortcutPath)
+    $shortcut.TargetPath = $SourceFilePath
+    Write-Output $ShortcutPath
+    $shortcut.Save()
 }
+
+#Create shortcut to WindowsTerminal
+$ShortcutPath = "$ToolFolder\WindowsTerminal.lnk"
+if (-not (Test-Path $ShortcutPath))
+{
+    $SourceFilePath = "C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.15.3466.0_x64__8wekyb3d8bbwe\wt.exe"
+    if (Test-Path $SourceFilePath) {
+        $WScriptObj = New-Object -ComObject ("WScript.Shell")
+        $shortcut = $WscriptObj.CreateShortcut($ShortcutPath)
+        $shortcut.TargetPath = $SourceFilePath
+        Write-Output $ShortcutPath
+        $shortcut.Save()
+    }
+}
+
 
 #Create Settings folder
 $SettingsFolderPath = "$ToolFolder\SettingsFolder.{ED7BA470-8E54-465E-825C-99712043E01C}"
