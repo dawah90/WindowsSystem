@@ -53,8 +53,5 @@ if (-not (Test-Path $ShortcutPath))
 
 #Create Settings folder.
 $SettingsFolderPath = "$ToolFolder\SettingsFolder.{ED7BA470-8E54-465E-825C-99712043E01C}"
-if (-not (Test-Path $SettingsFolderPath))
-{
-New-Item -Path $SettingsFolderPath -ItemType Directory
-}
+if (-not (Test-Path $SettingsFolderPath)) { New-Item -Path $SettingsFolderPath -ItemType Directory }
 
