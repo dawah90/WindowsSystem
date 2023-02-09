@@ -24,6 +24,7 @@ if (Get-ExecutionPolicy | Where-Object ($_.Status -ne "Unrestricted")) {
 
 #Source: https://winget.run/.
 winget install -e --id JAMSoftware.TreeSize --accept-source-agreements --accept-package-agreements
+winget install -e --id Notepad++.Notepad++
 winget install -e --id GitHub.GitHubDesktop
 winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Microsoft.WindowsTerminal
