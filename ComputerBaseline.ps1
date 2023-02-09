@@ -1,3 +1,21 @@
+Set-ExecutionPolicy Unrestricted
+
+# get latest download url
+$URL = "https://api.github.com/repos/microsoft/winget-cli/releases/latest"
+$URL = (Invoke-WebRequest -Uri $URL).Content | ConvertFrom-Json |
+        Select-Object -ExpandProperty "assets" |
+        Where-Object "browser_download_url" -Match '.msixbundle' |
+        Select-Object -ExpandProperty "browser_download_url"
+
+# download
+Invoke-WebRequest -Uri $URL -OutFile "Setup.msix" -UseBasicParsing
+
+# install
+Add-AppxPackage -Path "Setup.msix"
+
+# delete file
+Remove-Item "Setup.msix"
+
 if (Get-ExecutionPolicy | Where-Object ($_.Status -ne "Unrestricted")) {
     write-output "Executionpolicy is not Unrestricted"
 } else {
@@ -5,7 +23,7 @@ if (Get-ExecutionPolicy | Where-Object ($_.Status -ne "Unrestricted")) {
 }
 
 #Source: https://winget.run/.
-winget install -e --id JAMSoftware.TreeSize
+winget install -e --id JAMSoftware.TreeSize --accept-source-agreements --accept-package-agreements
 winget install -e --id GitHub.GitHubDesktop
 winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Microsoft.WindowsTerminal
@@ -54,4 +72,3 @@ if (-not (Test-Path $ShortcutPath))
 #Create Settings folder.
 $SettingsFolderPath = "$ToolFolder\SettingsFolder.{ED7BA470-8E54-465E-825C-99712043E01C}"
 if (-not (Test-Path $SettingsFolderPath)) { New-Item -Path $SettingsFolderPath -ItemType Directory }
-
