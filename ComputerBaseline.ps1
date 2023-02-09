@@ -35,7 +35,7 @@ winget install -e --id 7zip.7zip
 winget install -e --id DominikReichl.KeePass
 winget install -e --id Google.Drive
 winget install -e --id GitHub.GitHubDesktop
-winget install sysinternals
+winget install sysinternals --accept-package-agreements
 
 #Define toolsfolder.
 $ToolFolder = "C:\_Tools"
