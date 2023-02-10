@@ -1,64 +1,36 @@
-shell:AppsFolder: Opens the Applications folder.
-shell:Common Programs: Opens the Common Programs folder, which contains shortcuts to programs that are installed for all users on the computer.
-shell:Common Startup: Opens the Common Startup folder, which contains shortcuts to programs that will start automatically when any user logs into the computer.
-shell:Cookies: Opens the Cookies folder.
-shell:Desktop: Opens the current user's desktop folder.
-shell:Favorites: Opens the Favorites folder.
-shell:History: Opens the History folder.
-shell:InternetCache: Opens the Internet Cache folder.
-shell:ProgramFiles: Opens the Program Files folder.
-shell:ProgramFilesX86: Opens the Program Files (x86) folder, which contains 32-bit program files on a 64-bit version of Windows.
-shell:Programs: Opens the current user's Programs folder.
-shell:System: Opens the System folder.
-shell:Windows: Opens the Windows folder.
-shell:Account Pictures: Opens the Account Pictures folder.
-shell:AddNewProgramsFolder: Opens the Add New Programs folder.
-shell:AdminTools: Opens the Administrative Tools folder.
-shell:AppUpdatesFolder: Opens the App Updates folder.
-shell:Common Administrative Tools: Opens the Common Administrative Tools folder.
-shell:Common Files: Opens the Common Files folder.
-shell:ControlPanelFolder: Opens the Control Panel folder.
-shell:Cookies: Opens the Cookies folder.
-shell:Games: Opens the Games folder.
-shell:Local AppData: Opens the Local AppData folder.
-shell:LocalizedResourcesDir: Opens the Localized Resources folder.
-shell:MicrosoftEdge: Opens the Microsoft Edge folder.
-shell:Music: Opens the Music folder.
-shell:OEM Links: Opens the OEM Links folder.
-shell:Original Images: Opens the Original Images folder.
-shell:PhotoAlbums: Opens the Photo Albums folder.
-shell:Pictures: Opens the Pictures folder.
-shell:PrintHood: Opens the PrintHood folder.
-shell:Profile: Opens the current user's profile folder.
-shell:Public: Opens the Public folder.
-shell:Public Desktop: Opens the Public Desktop folder.
-shell:Public Documents: Opens the Public Documents folder.
-shell:Public Downloads: Opens the Public Downloads folder.
-shell:Public GameTasks: Opens the Public GameTasks folder.
-shell:Public Music: Opens the Public Music folder.
-shell:Public Pictures: Opens the Public Pictures folder.
-shell:Public Videos: Opens the Public Videos folder.
-shell:Quick Launch: Opens the Quick Launch folder.
-shell:Recent: Opens the Recent folder.
-shell:RecycleBinFolder: Opens the Recycle Bin folder.
-shell:ResourceDir: Opens the Resource folder.
-shell:Roaming: Opens the Roaming folder.
-shell:RoamingAppData: Opens the Roaming AppData folder.
-shell:SampleMusic: Opens the Sample Music folder.
-shell:SamplePictures: Opens the Sample Pictures folder.
-shell:SamplePlaylists: Opens the Sample Playlists folder.
-shell:SampleVideos: Opens the Sample Videos folder.
-shell:SavedGames: Opens the Saved Games folder.
-shell:SavedSearches: Opens the Saved Searches folder.
-shell:Screenshots: Opens the Screenshots folder.
-shell:SearchHistoryFolder: Opens the Search History folder.
-shell:SearchHomeFolder: Opens the Search Home folder.
-shell:SendTo: Opens the SendTo folder.
-shell:Start Menu: Opens the Start Menu folder.
-shell:StartUp: Opens the Startup folder.
-shell:SyncManagerFolder: Opens the Sync Manager folder.
-shell:System: Opens the System folder.
-shell:SystemX86: Opens the System (x86) folder on a 64-bit version of Windows.
-shell:Templates: Opens the Templates folder.
-shell:UserProfiles: Opens the User Profiles folder.
-shell:Videos: Opens the Videos folder.
+Private folders:
+shell:Desktop	: Opens the current user's desktop folder.
+shell:StartUp	: Opens the Startup folder.
+
+Shared folders:
+shell:Common Programs	: Opens the Common Programs folder, which contains shortcuts to programs that are installed for all users on the computer.
+shell:Common Startup	: Opens the Common Startup folder, which contains shortcuts to programs that will start automatically when any user logs into the computer.
+shell:Common Desktop	: Opens the Common Desktop folder
+shell:Common Documents	: Opens the Common Documents folder.
+shell:Public	: Opens the Public folder.
+
+Nice to have:
+shell:UserProfiles		: Opens the User folder.
+shell:Common Administrative Tools	: Opens the Common Administrative Tools folder.
+shell:ProgramFiles	: Opens the Program Files folder.
+shell:ProgramFilesX86	: Opens the Program Files (x86) folder, which contains 32-bit program files on a 64-bit version of Windows.
+shell:Programs	: Opens the current user's Programs folder. This is where all start menu shortcuts are located.
+shell:System	: Opens the System folder.
+shell:SystemX86	: Opens the System (x86) folder on a 64-bit version of Windows.
+shell:Windows	: Opens the Windows folder.
+shell:Local AppData	: Opens the Local AppData folder.
+shell:AppData	: Opens the Roaming AppData folder.
+shell:Start Menu	: Opens the Start Menu folder.
+
+Other:
+shell:ControlPanelFolder	: Opens the Control Panel folder.
+shell:Recent	: Opens the Recent folder.
+shell:RecycleBinFolder	: Opens the Recycle Bin folder.
+shell:ResourceDir	: Opens the Resource folder.
+shell:Quick Launch	: Opens the Quick Launch folder.
+shell:Profile	: Opens the current user's profile folder.
+shell:AppsFolder	: Opens the Applications folder.
+shell:Cookies	: Opens the Cookies folder.
+shell:Favorites	: Opens the Favorites folder.
+shell:History	: Opens the History folder.
+shell:AccountPictures	: Opens the Account Pictures folder.
