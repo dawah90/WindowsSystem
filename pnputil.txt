@@ -1,0 +1,5 @@
+#Adds all drivers in a folder that ends with .inf
+#Include all subdirs
+#Install added drivers to relevant devices
+
+pnputil.exe /add-driver "C:\Temp\drivers\*.inf" /subdirs /install
